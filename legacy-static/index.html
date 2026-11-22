@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Otterova — Digital Products, Engineered with Craft</title>
+  <meta name="description" content="Otterova is a tech agency that designs and builds websites, apps, AI solutions and digital products for ambitious brands." />
+  <meta name="theme-color" content="#0c0a09" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Otterova — Tech Agency" />
+  <meta property="og:description" content="We design and engineer digital products that move businesses forward." />
+  <meta property="og:image" content="assets/images/logo-full.png" />
+
+  <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+  <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/css/base.css" />
+  <link rel="stylesheet" href="assets/css/components.css" />
+  <link rel="stylesheet" href="assets/css/sections.css" />
+  <link rel="stylesheet" href="assets/css/responsive.css" />
+</head>
+<body class="is-loading">
+
+  <!-- ============ PRELOADER ============ -->
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="preloader__inner">
+      <img src="assets/images/logo-mark.png" alt="" class="preloader__logo" />
+      <div class="preloader__word">
+        <span>O</span><span>T</span><span>T</span><span>E</span><span>R</span><span>O</span><span>V</span><span>A</span>
+      </div>
+      <div class="preloader__bar"><span id="preloaderBar"></span></div>
+      <div class="preloader__count"><span id="preloaderCount">0</span>%</div>
+    </div>
+  </div>
+
+  <!-- ============ CURSOR ============ -->
+  <div class="cursor" id="cursor"><span class="cursor__label">View</span></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+
+  <!-- Noise overlay for premium grain texture -->
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- ============ HEADER ============ -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#top" class="brand" aria-label="Otterova home">
+        <img src="assets/images/logo-mark.png" alt="" class="brand__mark" />
+        <span class="brand__name">OTTEROVA</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <a href="#services" class="nav__link" data-magnetic>Services</a>
+        <a href="#work" class="nav__link" data-magnetic>Work</a>
+        <a href="#process" class="nav__link" data-magnetic>Process</a>
+        <a href="#about" class="nav__link" data-magnetic>About</a>
+      </nav>
+
+      <a href="#contact" class="btn btn--small btn--primary header__cta" data-magnetic>
+        <span class="btn__text">Let's talk</span>
+        <span class="btn__icon">→</span>
+      </a>
+
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <nav class="mobile-menu__nav">
+      <a href="#services">Services</a>
+      <a href="#work">Work</a>
+      <a href="#process">Process</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="mobile-menu__foot">
+      <a href="mailto:hello@otterova.com">hello@otterova.com</a><br />
+      <a href="tel:+919876543210">+91 98765 43210</a>
+    </div>
+  </div>
+
+  <main id="top">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="hero">
+      <div class="hero__bg">
+        <div class="orb orb--1"></div>
+        <div class="orb orb--2"></div>
+        <div class="orb orb--3"></div>
+        <div class="hero__grid"></div>
+      </div>
+
+      <div class="container hero__content">
+        <div class="pill hero__pill" data-hero-fade>
+          <span class="pill__dot"></span> Now booking projects for 2027
+        </div>
+
+        <h1 class="hero__title">
+          <span class="line"><span class="line__inner">We build digital</span></span>
+          <span class="line"><span class="line__inner">products that <em class="text-gradient">make</em></span></span>
+          <span class="line"><span class="line__inner"><em class="text-gradient">waves.</em> <span class="hero__wave">
+            <svg viewBox="0 0 120 40" fill="none"><path d="M2 28c12 0 12-16 24-16s12 16 24 16 12-16 24-16 12 16 24 16 12-16 20-16" stroke="currentColor" stroke-width="5" stroke-linecap="round"/></svg>
+          </span></span></span>
+        </h1>
+
+        <div class="hero__bottom">
+          <p class="hero__lead" data-hero-fade>
+            Otterova is a design &amp; engineering studio crafting high‑performance websites,
+            apps and AI‑powered platforms for brands that refuse to blend in.
+          </p>
+          <div class="hero__actions" data-hero-fade>
+            <a href="#contact" class="btn btn--primary" data-magnetic>
+              <span class="btn__text">Start a project</span>
+              <span class="btn__icon">→</span>
+            </a>
+            <a href="#work" class="btn btn--ghost" data-magnetic>
+              <span class="btn__text">See our work</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero__meta" data-hero-fade>
+          <div class="hero__avatars">
+            <span style="--c:#bf4b1c">A</span><span style="--c:#e8743b">R</span><span style="--c:#7a3a1f">S</span><span style="--c:#f2a276">K</span>
+          </div>
+          <div>
+            <div class="hero__stars">★★★★★</div>
+            <small>Trusted by 120+ founders &amp; teams</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__visual" data-hero-fade>
+        <div class="hero__ring"></div>
+        <div class="hero__ring hero__ring--2"></div>
+        <img src="assets/images/logo-mark.png" alt="Otterova otter mark" class="hero__otter" />
+      </div>
+
+      <a href="#marquee" class="scroll-hint" aria-label="Scroll down">
+        <span>Scroll</span><i></i>
+      </a>
+    </section>
+
+    <!-- ============ MARQUEE ============ -->
+    <section class="marquee" id="marquee" aria-label="Capabilities">
+      <div class="marquee__track">
+        <div class="marquee__group">
+          <span>Web Development</span><b>✦</b><span>Mobile Apps</span><b>✦</b><span>UI/UX Design</span><b>✦</b><span>AI &amp; Automation</span><b>✦</b><span>Cloud &amp; DevOps</span><b>✦</b><span>Brand Identity</span><b>✦</b>
+        </div>
+        <div class="marquee__group" aria-hidden="true">
+          <span>Web Development</span><b>✦</b><span>Mobile Apps</span><b>✦</b><span>UI/UX Design</span><b>✦</b><span>AI &amp; Automation</span><b>✦</b><span>Cloud &amp; DevOps</span><b>✦</b><span>Brand Identity</span><b>✦</b>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ INTRO / ABOUT ============ -->
+    <section class="section intro" id="about">
+      <div class="container">
+        <span class="eyebrow" data-reveal>( About Otterova )</span>
+        <p class="intro__text" data-split-words>
+          Like the otter — curious, playful and relentlessly skilled — we dive deep into every problem.
+          We blend strategy, design and engineering to ship products that feel effortless and perform at scale.
+        </p>
+
+        <div class="stats">
+          <div class="stat" data-reveal>
+            <div class="stat__num"><span data-count="150">0</span>+</div>
+            <div class="stat__label">Projects shipped</div>
+          </div>
+          <div class="stat" data-reveal>
+            <div class="stat__num"><span data-count="98">0</span>%</div>
+            <div class="stat__label">Client retention</div>
+          </div>
+          <div class="stat" data-reveal>
+            <div class="stat__num"><span data-count="12">0</span></div>
+            <div class="stat__label">Countries served</div>
+          </div>
+          <div class="stat" data-reveal>
+            <div class="stat__num"><span data-count="5">0</span>★</div>
+            <div class="stat__label">Average rating</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SERVICES ============ -->
+    <section class="section services" id="services">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow" data-reveal>( What we do )</span>
+            <h2 class="section-title" data-split-lines>Services built for<br /><em class="text-gradient">ambitious</em> brands</h2>
+          </div>
+          <p class="section-head__copy" data-reveal>
+            End‑to‑end capability under one roof — from the first sketch to production and beyond.
+          </p>
+        </div>
+
+        <div class="services__grid">
+          <article class="service-card" data-tilt data-reveal>
+            <div class="service-card__glow"></div>
+            <span class="service-card__num">01</span>
+            <div class="service-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M8 21h8M12 18v3M7 9l2 2-2 2M11 13h4"/></svg>
+            </div>
+            <h3>Web Development</h3>
+            <p>Blazing‑fast marketing sites, web apps and e‑commerce built with Next.js, React and headless CMS.</p>
+            <ul class="tags"><li>Next.js</li><li>React</li><li>Shopify</li></ul>
+          </article>
+
+          <article class="service-card" data-tilt data-reveal>
+            <div class="service-card__glow"></div>
+            <span class="service-card__num">02</span>
+            <div class="service-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg>
+            </div>
+            <h3>Mobile Apps</h3>
+            <p>Native‑feeling iOS &amp; Android apps with Flutter and React Native — designed for delight and retention.</p>
+            <ul class="tags"><li>Flutter</li><li>React Native</li><li>Swift</li></ul>
+          </article>
+
+          <article class="service-card" data-tilt data-reveal>
+            <div class="service-card__glow"></div>
+            <span class="service-card__num">03</span>
+            <div class="service-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18M3 12h18"/></svg>
+            </div>
+            <h3>UI/UX &amp; Branding</h3>
+            <p>Research‑led product design, design systems and identities that make people stop scrolling.</p>
+            <ul class="tags"><li>Figma</li><li>Design Systems</li><li>Motion</li></ul>
+          </article>
+
+          <article class="service-card" data-tilt data-reveal>
+            <div class="service-card__glow"></div>
+            <span class="service-card__num">04</span>
+            <div class="service-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2v4M12 18v4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M2 12h4M18 12h4M4.9 19.1l2.8-2.8M16.3 7.7l2.8-2.8"/><circle cx="12" cy="12" r="3"/></svg>
+            </div>
+            <h3>AI &amp; Automation</h3>
+            <p>LLM‑powered assistants, smart workflows and data pipelines that save teams hundreds of hours.</p>
+            <ul class="tags"><li>LLMs</li><li>RAG</li><li>Agents</li></ul>
+          </article>
+
+          <article class="service-card" data-tilt data-reveal>
+            <div class="service-card__glow"></div>
+            <span class="service-card__num">05</span>
+            <div class="service-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M7 18a5 5 0 1 1 .9-9.9A6 6 0 0 1 19 10a4 4 0 0 1-1 8z"/></svg>
+            </div>
+            <h3>Cloud &amp; DevOps</h3>
+            <p>Scalable infrastructure, CI/CD and monitoring on AWS, GCP and Vercel — secure by default.</p>
+            <ul class="tags"><li>AWS</li><li>Docker</li><li>Kubernetes</li></ul>
+          </article>
+
+          <article class="service-card" data-tilt data-reveal>
+            <div class="service-card__glow"></div>
+            <span class="service-card__num">06</span>
+            <div class="service-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 3v18h18"/><path d="M7 14l4-4 3 3 5-6"/></svg>
+            </div>
+            <h3>Growth &amp; SEO</h3>
+            <p>Conversion optimisation, technical SEO and analytics that turn traffic into revenue.</p>
+            <ul class="tags"><li>SEO</li><li>CRO</li><li>Analytics</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WORK ============ -->
+    <section class="section work" id="work">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow" data-reveal>( Selected work )</span>
+            <h2 class="section-title" data-split-lines>Projects we're<br /><em class="text-gradient">proud</em> of</h2>
+          </div>
+          <a href="#contact" class="link-arrow" data-reveal data-magnetic>All case studies <span>↗</span></a>
+        </div>
+
+        <div class="work__list">
+          <a href="#contact" class="work-item" data-cursor="View" data-reveal>
+            <div class="work-item__media" style="--g1:#bf4b1c;--g2:#3b1508">
+              <div class="mock mock--browser">
+                <i></i><i></i><i></i>
+                <div class="mock__lines"><b></b><b></b><b></b></div>
+              </div>
+            </div>
+            <div class="work-item__info">
+              <h3>Nimbus Finance</h3>
+              <p>Fintech · Web App · Branding</p>
+            </div>
+            <span class="work-item__year">2026</span>
+          </a>
+
+          <a href="#contact" class="work-item" data-cursor="View" data-reveal>
+            <div class="work-item__media" style="--g1:#e8743b;--g2:#2a1a12">
+              <div class="mock mock--phone"><div class="mock__lines"><b></b><b></b><b></b></div></div>
+            </div>
+            <div class="work-item__info">
+              <h3>Pulse Health</h3>
+              <p>HealthTech · Mobile App</p>
+            </div>
+            <span class="work-item__year">2026</span>
+          </a>
+
+          <a href="#contact" class="work-item" data-cursor="View" data-reveal>
+            <div class="work-item__media" style="--g1:#7a3a1f;--g2:#141010">
+              <div class="mock mock--chat"><b></b><b></b><b></b></div>
+            </div>
+            <div class="work-item__info">
+              <h3>Lumen AI</h3>
+              <p>SaaS · AI Assistant · Platform</p>
+            </div>
+            <span class="work-item__year">2025</span>
+          </a>
+
+          <a href="#contact" class="work-item" data-cursor="View" data-reveal>
+            <div class="work-item__media" style="--g1:#f2a276;--g2:#3a1d10">
+              <div class="mock mock--grid"><b></b><b></b><b></b><b></b></div>
+            </div>
+            <div class="work-item__info">
+              <h3>Terra Goods</h3>
+              <p>E‑commerce · Shopify · Brand</p>
+            </div>
+            <span class="work-item__year">2025</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROCESS (horizontal scroll) ============ -->
+    <section class="process" id="process">
+      <div class="process__pin">
+        <div class="container process__head">
+          <span class="eyebrow">( How we work )</span>
+          <h2 class="section-title">A process that<br /><em class="text-gradient">flows</em></h2>
+        </div>
+        <div class="process__track" id="processTrack">
+          <div class="process-card">
+            <span class="process-card__step">Step 01</span>
+            <h3>Discover</h3>
+            <p>Workshops, research and audits to understand your users, market and goals.</p>
+            <div class="process-card__big">01</div>
+          </div>
+          <div class="process-card">
+            <span class="process-card__step">Step 02</span>
+            <h3>Strategise</h3>
+            <p>We define scope, architecture and a roadmap with clear milestones and KPIs.</p>
+            <div class="process-card__big">02</div>
+          </div>
+          <div class="process-card">
+            <span class="process-card__step">Step 03</span>
+            <h3>Design</h3>
+            <p>Wireframes to pixel‑perfect prototypes, tested with real users before a line of code.</p>
+            <div class="process-card__big">03</div>
+          </div>
+          <div class="process-card">
+            <span class="process-card__step">Step 04</span>
+            <h3>Build</h3>
+            <p>Agile sprints, clean code, weekly demos. You see progress every single week.</p>
+            <div class="process-card__big">04</div>
+          </div>
+          <div class="process-card">
+            <span class="process-card__step">Step 05</span>
+            <h3>Launch &amp; Grow</h3>
+            <p>Smooth go‑live, monitoring and continuous iteration to keep you ahead.</p>
+            <div class="process-card__big">05</div>
+          </div>
+        </div>
+        <div class="process__progress"><span id="processProgress"></span></div>
+      </div>
+    </section>
+
+    <!-- ============ TECH STACK ============ -->
+    <section class="section stack">
+      <div class="container">
+        <span class="eyebrow center" data-reveal>( Our toolkit )</span>
+        <h2 class="section-title center" data-split-lines>Modern stack, <em class="text-gradient">zero</em> compromise</h2>
+        <div class="stack__cloud">
+          <span data-reveal>React</span><span data-reveal>Next.js</span><span data-reveal>TypeScript</span>
+          <span data-reveal>Node.js</span><span data-reveal>Python</span><span data-reveal>Flutter</span>
+          <span data-reveal>AWS</span><span data-reveal>PostgreSQL</span><span data-reveal>MongoDB</span>
+          <span data-reveal>Figma</span><span data-reveal>OpenAI</span><span data-reveal>Docker</span>
+          <span data-reveal>Tailwind</span><span data-reveal>GSAP</span><span data-reveal>Three.js</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TESTIMONIALS ============ -->
+    <section class="section testimonials">
+      <div class="container">
+        <span class="eyebrow" data-reveal>( Kind words )</span>
+        <div class="testimonial-slider" id="testimonialSlider">
+          <div class="testimonial is-active">
+            <blockquote>“Otterova didn't just build our platform — they rethought how our customers experience it. Conversions jumped 64% in the first quarter.”</blockquote>
+            <div class="testimonial__author"><span class="avatar">RK</span><div><strong>Rohan Kapoor</strong><small>CEO, Nimbus Finance</small></div></div>
+          </div>
+          <div class="testimonial">
+            <blockquote>“The most detail‑obsessed team we've ever worked with. Every interaction feels intentional. Our app hit 4.9★ within weeks.”</blockquote>
+            <div class="testimonial__author"><span class="avatar">SM</span><div><strong>Sara Mendes</strong><small>Founder, Pulse Health</small></div></div>
+          </div>
+          <div class="testimonial">
+            <blockquote>“Fast, transparent and genuinely creative. They shipped our AI assistant in six weeks and it now handles 70% of support.”</blockquote>
+            <div class="testimonial__author"><span class="avatar">DL</span><div><strong>Daniel Lee</strong><small>CTO, Lumen AI</small></div></div>
+          </div>
+        </div>
+        <div class="testimonial-nav">
+          <button class="round-btn" id="tPrev" aria-label="Previous testimonial">←</button>
+          <div class="testimonial-dots" id="tDots"></div>
+          <button class="round-btn" id="tNext" aria-label="Next testimonial">→</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA / CONTACT ============ -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <div class="contact__card">
+          <div class="contact__glow"></div>
+          <div class="contact__left">
+            <span class="eyebrow">( Let's collaborate )</span>
+            <h2 class="contact__title" data-split-lines>Have an idea?<br />Let's make it <em class="text-gradient">real.</em></h2>
+            <p>Tell us about your project and we'll get back within 24 hours with next steps.</p>
+            <div class="contact__links">
+              <a href="mailto:hello@otterova.com" class="link-arrow" data-magnetic>hello@otterova.com <span>↗</span></a>
+              <a href="tel:+919876543210" class="link-arrow" data-magnetic>+91 98765 43210 <span>↗</span></a>
+              <span class="contact__address">Office 402, Tech Park, Bengaluru, India</span>
+            </div>
+          </div>
+
+          <form class="form" id="contactForm" novalidate>
+            <div class="form__row">
+              <div class="field">
+                <input type="text" id="name" name="name" placeholder=" " required />
+                <label for="name">Your name</label>
+              </div>
+              <div class="field">
+                <input type="email" id="email" name="email" placeholder=" " required />
+                <label for="email">Email address</label>
+              </div>
+            </div>
+            <div class="field-group">
+              <span class="field-group__label">I'm interested in</span>
+              <div class="chips">
+                <label class="chip"><input type="checkbox" name="interest" value="web" /><span>Website</span></label>
+                <label class="chip"><input type="checkbox" name="interest" value="app" /><span>Mobile App</span></label>
+                <label class="chip"><input type="checkbox" name="interest" value="design" /><span>UI/UX</span></label>
+                <label class="chip"><input type="checkbox" name="interest" value="ai" /><span>AI</span></label>
+                <label class="chip"><input type="checkbox" name="interest" value="other" /><span>Other</span></label>
+              </div>
+            </div>
+            <div class="field">
+              <textarea id="message" name="message" rows="4" placeholder=" " required></textarea>
+              <label for="message">Tell us about your project</label>
+            </div>
+            <button type="submit" class="btn btn--primary btn--block" data-magnetic>
+              <span class="btn__text">Send message</span>
+              <span class="btn__icon">→</span>
+            </button>
+            <p class="form__status" id="formStatus" role="status"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <img src="assets/images/logo-full.png" alt="Otterova" class="footer__logo" />
+          <p>Digital products, engineered with craft.</p>
+        </div>
+        <div class="footer__cols">
+          <div>
+            <h4>Studio</h4>
+            <a href="#about">About</a><a href="#work">Work</a><a href="#process">Process</a><a href="#contact">Careers</a>
+          </div>
+          <div>
+            <h4>Services</h4>
+            <a href="#services">Web</a><a href="#services">Mobile</a><a href="#services">Design</a><a href="#services">AI</a>
+          </div>
+          <div>
+            <h4>Social</h4>
+            <a href="https://instagram.com/otterova" target="_blank" rel="noopener">Instagram</a><a href="https://linkedin.com/company/otterova" target="_blank" rel="noopener">LinkedIn</a><a href="https://x.com/otterova" target="_blank" rel="noopener">X / Twitter</a><a href="https://dribbble.com/otterova" target="_blank" rel="noopener">Dribbble</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__giant" aria-hidden="true">OTTEROVA</div>
+      <div class="footer__bottom">
+        <span>© <span id="year"></span> Otterova. All rights reserved.</span>
+        <a href="#top" class="back-top" data-magnetic>Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============ SCRIPTS ============ -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+
+  <script src="assets/js/modules/preloader.js"></script>
+  <script src="assets/js/modules/cursor.js"></script>
+  <script src="assets/js/modules/navigation.js"></script>
+  <script src="assets/js/modules/animations.js"></script>
+  <script src="assets/js/modules/interactions.js"></script>
+  <script src="assets/js/modules/testimonials.js"></script>
+  <script src="assets/js/modules/form.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

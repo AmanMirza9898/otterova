@@ -1,0 +1,52 @@
+/* =========================================================
+   OTTEROVA — RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 1100px) {
+  .services__grid { grid-template-columns: repeat(2, 1fr); }
+  .hero__visual { filter: opacity(0.35); right: -40px; }
+}
+
+@media (max-width: 900px) {
+  .nav, .header__cta { display: none; }
+  .burger { display: block; }
+
+  .section-head { flex-direction: column; align-items: flex-start; }
+
+  .stats { grid-template-columns: repeat(2, 1fr); }
+  .stat { padding: 32px 16px 32px 0 !important; border-right: 0; border-bottom: 1px solid var(--line); }
+  .stat:nth-child(odd) { border-right: 1px solid var(--line); }
+  .stat:nth-child(even) { padding-left: 16px !important; }
+
+  .work__list { grid-template-columns: 1fr; }
+  .work-item:nth-child(even) { margin-top: 0; }
+
+  .contact__card { grid-template-columns: 1fr; }
+
+  /* Process: native horizontal swipe on touch screens */
+  .process__pin { min-height: auto; padding-block: 96px; }
+  .process__track {
+    width: auto; overflow-x: auto; scroll-snap-type: x mandatory;
+    padding-bottom: 12px; scrollbar-width: none;
+  }
+  .process__track::-webkit-scrollbar { display: none; }
+  .process-card { scroll-snap-align: center; flex-shrink: 0; width: min(82vw, 380px); }
+  .process__progress { display: none; }
+}
+
+@media (max-width: 640px) {
+  .services__grid { grid-template-columns: 1fr; }
+  .service-card { min-height: auto; padding: 28px; }
+  .hero { padding-top: 120px; }
+  .hero__visual { width: 220px; top: 120px; right: -50px; translate: none; filter: opacity(0.2); }
+  .hero__lead { font-size: 16px; }
+  .hero__actions .btn { flex: 1; padding: 15px 18px; }
+  .scroll-hint { display: none; }
+  .orb--1 { width: 340px; height: 340px; opacity: 0.4; }
+  .orb--2 { width: 280px; height: 280px; }
+  .form__row { grid-template-columns: 1fr; }
+  .contact__card { border-radius: var(--radius); }
+  .testimonial-slider { min-height: 420px; }
+  .footer__cols { gap: 32px 48px; }
+  .marquee { padding-block: 22px; }
+}
