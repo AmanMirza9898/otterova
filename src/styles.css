@@ -1146,6 +1146,9 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 600; letter-spac
   box-shadow: 0 32px 64px -40px rgba(28, 25, 23, .25);
 }
 .form__row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.form h3 { font-size: 22px; }
+.contact__details--card { margin: 0 -14px; max-width: none; }
+.contact__details--card .contact__value { overflow-wrap: anywhere; }
 
 .field { display: grid; gap: 6px; border: 0; min-width: 0; }
 .field__label, .field legend { font-size: 14px; font-weight: 500; }

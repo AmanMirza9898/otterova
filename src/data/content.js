@@ -6,9 +6,10 @@ import aryaVedaShot from "../assets/projects/aryaveda.jpg";
 import lawNationShot from "../assets/projects/lawnation.jpg";
 
 export const contact = {
-  email: "hello@otterova.com",
-  phone: "+91 98765 43210",
-  phoneHref: "tel:+919876543210",
+  name: "Aman Mirza",
+  email: "aman9811269898@gmail.com",
+  phone: "+91 80769 93834",
+  phoneHref: "tel:+918076993834",
   address: "Office 402, Tech Park, Bengaluru 560103, India",
   hours: "Mon–Fri, 10:00–19:00 IST",
 };
