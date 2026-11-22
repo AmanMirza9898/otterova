@@ -153,7 +153,7 @@ export default function Footer() {
               <img src={logoMark} alt="" width="32" height="32" />
               <span>Otterova</span>
             </a>
-            <p>Software design and development studio based in Bengaluru, India.</p>
+            <p>Software design and development studio based in Gurugram, India.</p>
           </div>
 
           <div className="footer__cols" data-fade>
@@ -167,7 +167,7 @@ export default function Footer() {
               <h4>Contact</h4>
               <a href={`mailto:${contact.email}`}>{contact.email}</a>
               <a href={contact.phoneHref}>{contact.phone}</a>
-              <span>Bengaluru, India</span>
+              <span>Gurugram, Haryana, India</span>
             </div>
             <div>
               <h4>Follow</h4>

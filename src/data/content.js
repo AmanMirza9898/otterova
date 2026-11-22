@@ -10,7 +10,7 @@ export const contact = {
   email: "aman9811269898@gmail.com",
   phone: "+91 80769 93834",
   phoneHref: "tel:+918076993834",
-  address: "Office 402, Tech Park, Bengaluru 560103, India",
+  address: "Gurugram, Haryana, India",
   hours: "Mon–Fri, 10:00–19:00 IST",
 };
 

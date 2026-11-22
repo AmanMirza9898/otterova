@@ -99,7 +99,7 @@ export default function Hero() {
         </h1>
 
         <p className="hero__lead hero__fade">
-          Otterova is a team of <strong>24 designers and engineers</strong> in Bengaluru. We build{" "}
+          Otterova is a team of <strong>24 designers and engineers</strong> in Gurugram. We build{" "}
           <strong>websites, mobile apps and AI tools</strong> for startups and established
           companies, from first version to long-term support.
         </p>
