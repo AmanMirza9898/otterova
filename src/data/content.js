@@ -1,5 +1,4 @@
 // All site copy lives here, so text can be edited without touching components.
-import mytixShot from "../assets/projects/mytix.png";
 import skyTripsShot from "../assets/projects/myskytrips.jpg";
 import anytimeHelpShot from "../assets/projects/anytimehelp.jpg";
 import aryaVedaShot from "../assets/projects/aryaveda.jpg";
@@ -74,21 +73,6 @@ export const services = [
 ];
 
 export const projects = [
-  {
-    name: "Mytix",
-    url: "https://www.mytix.com.au",
-    result: { value: 3, decimals: 0, suffix: " taps", label: "From finding a show to a QR ticket at the gate" },
-    sign: "See you at the gate!",
-    tags: ["Web & mobile", "Stripe", "Seat maps"],
-    sector: "Events & ticketing",
-    scope: "Ticketing platform, web & app",
-    year: "2026",
-    summary: "Live event ticketing for Australia: concerts, comedy and festivals. Reserved seats on a live venue map, QR tickets, Stripe and Afterpay checkout, plus tools for organisers.",
-    tone: "#FBF3DC",
-    accent: "#A86B00",
-    kind: "screenshot",
-    image: mytixShot,
-  },
   {
     name: "My Sky Trips",
     url: "https://www.myskytrips.com",
