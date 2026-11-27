@@ -1,6 +1,4 @@
 // All site copy lives here, so text can be edited without touching components.
-import skyTripsShot from "../assets/projects/myskytrips.jpg";
-import anytimeHelpShot from "../assets/projects/anytimehelp.jpg";
 import aryaVedaShot from "../assets/projects/aryaveda.jpg";
 import lawNationShot from "../assets/projects/lawnation.jpg";
 
@@ -73,36 +71,6 @@ export const services = [
 ];
 
 export const projects = [
-  {
-    name: "My Sky Trips",
-    url: "https://www.myskytrips.com",
-    result: { value: 500, decimals: 0, suffix: "+", label: "Trips booked through the platform" },
-    sign: "Up, up and away!",
-    tags: ["React", "Razorpay", "WhatsApp"],
-    sector: "Travel",
-    scope: "Travel booking website",
-    year: "2026",
-    summary: "Premium travel booking across India: Char Dham helicopter yatra, private charters, joyrides and road trips. Visitors can browse packages, enquire and pay online with Razorpay.",
-    tone: "#E3EDF8",
-    accent: "#1565C0",
-    kind: "screenshot",
-    image: skyTripsShot,
-  },
-  {
-    name: "Anytime Help",
-    url: "https://www.anytimehelp.in",
-    result: { value: 1, decimals: 0, suffix: " min", label: "Or less to report an issue with a photo" },
-    sign: "Fixed it!",
-    tags: ["Next.js", "Mobile app", "Firebase"],
-    sector: "Property management",
-    scope: "Mobile app & admin dashboard",
-    year: "2026",
-    summary: "Complaint and maintenance app for societies and campuses. Residents report issues with a photo, complaints go automatically to the right department, and admins track everything from Pending to Done.",
-    tone: "#E4EAFB",
-    accent: "#1D4ED8",
-    kind: "screenshot",
-    image: anytimeHelpShot,
-  },
   {
     name: "Arya Veda Academy",
     url: "https://www.aryavedaacademy.com",
